@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <div class="jumpbotton col-sm-4 p-2 m-0 bg-inverse">
+    <h1 class="text-center">Angular Calculator</h1>
+    <!--display input-->
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+      <div class="col-sm-12 form-control text-lg-right" type="text">{{input}}</div>
+    </div>
+    <!--display output-->
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+      <div class="form-control text-lg-right" type="text">{{result}}</div>
+    </div>
+    <!-- First row of bottons -->
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-info col-sm-6" type="button" (click)="allclear()">C</button>
+      <button class="btn btn-warning col-sm-3" type="button" (click)="clear()">X</button>
+      <button class="btn btn-secondary col-sm-3" type="button" (click)="pressOperator('/')">/</button>
+    </div>
+
+    <!-- second row of bottons -->
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('7')">7</button>
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('8')">8</button>
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('9')">9</button>
+
+      <button class="btn btn-secondary col-sm-3" type="button" (click)="pressOperator('*')">*</button>
+    </div>
+
+    <!-- third row of bottons -->
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('4')">4</button>
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('5')">5</button>
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('6')">6</button>
+
+      <button class="btn btn-secondary col-sm-3" type="button" (click)="pressOperator('-')">-</button>
+    </div>
+
+    <!-- forth row of bottons -->
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('1')">1</button>
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('2')">2</button>
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('3')">3</button>
+
+      <button class="btn btn-secondary col-sm-3" type="button" (click)="pressOperator('+')">+</button>
+    </div>
+    <!-- fifth row of bottons -->
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('.')">.</button>
+      <button class="btn btn-lg btn-outline-primary col-sm-3 p-1" type="button" (click)="pressNum('0')">0</button>
+      <button class="btn btn-success col-sm-6 p-1" type="button" (click)="getResult()">=</button>
+    </div>
+
+
+  </div>
+</div>
